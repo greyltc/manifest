@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-
 	<remote  name="grey" fetch="../../../greyltc"/>
 	<remote  name="james" fetch="../../../jmball"/>
 
 	<default revision="master" remote="grey"/>
 
-	<project name="control-ui"/>
+	<project name="control-ui" path="source"/>
+	<project name="central-control" path="source"/>
+	
+	<project name="eqe" remote="james" path="source"/>
+	<project name="acton_sp2150" remote="james" path="source"/>
+	<project name="rigol_dp800" remote="james" path="source"/>
+	<project name="srs_sr830" remote="james" path="source"/>
+	<project name="mqtt_tools" remote="james" path="source"/>
 </manifest>
