@@ -5,12 +5,12 @@
 
 	<default revision="master" remote="grey"/>
 
-	<project name="control-ui" path="source"/>
-	<project name="central-control" path="source"/>
-	
-	<project name="eqe" remote="james" path="source"/>
-	<project name="acton_sp2150" remote="james" path="source/"/>
-	<project name="rigol_dp800" remote="james" path="source/"/>
-	<project name="srs_sr830" remote="james" path="source/"/>
-	<project name="mqtt_tools" remote="james" path="source/"/>
+	<project name="control-ui" path="source/"/>
+	<project name="central-control" path="source/"/>
+
+	<project name="eqe" remote="james" path="source/eqe"/>
+	<project name="acton_sp2150" remote="james" path="source/acton_sp2150"/>
+	<project name="rigol_dp800" remote="james" path="source/rigol_dp800"/>
+	<project name="srs_sr830" remote="james" path="source/srs_sr830"/>
+	<project name="mqtt_tools" remote="james" path="source/mqtt_tools"/>
 </manifest>
