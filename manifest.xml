@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="grey" fetch="../../greyltc"/>
+  <remote  name="james" fetch="../../jmball"/>
+
+  <default revision="master" remote="grey"/>
+
+  <project name="control-ui"/>
+</manifest>
