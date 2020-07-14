@@ -5,8 +5,8 @@
 
 	<default revision="master" remote="grey"/>
 
-	<project name="control-ui" path="source/."/>
-	<project name="central-control" path="source/."/>
+	<project name="control-ui" path="source/source-central-control"/>
+	<project name="central-control" path="source/central-control"/>
 
 	<project name="eqe" remote="james" path="source/eqe"/>
 	<project name="acton_sp2150" remote="james" path="source/acton_sp2150"/>
