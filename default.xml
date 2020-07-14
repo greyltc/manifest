@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-	<remote  name="grey" fetch="../../../greyltc"/>
-	<remote  name="james" fetch="../../../jmball"/>
+	<remote  name="grey" fetch="../../../greyltc" />
+	<remote  name="james" fetch="../../../jmball" />
 
-	<default revision="master" remote="grey"/>
+	<default revision="master" remote="grey" />
 
-	<project name="control-ui" path="source/source-central-control"/>
-	<project name="central-control" path="source/central-control"/>
+	<project name="control-ui" path="source/source-central-control" >
+		<linkfile src="python/glade.ui" dest="python/" />
+	</project>
+
+	<project name="central-control" path="source/central-control" />
 
 	<project name="eqe" remote="james" path="source/eqe"/>
 	<project name="acton_sp2150" remote="james" path="source/acton_sp2150"/>
