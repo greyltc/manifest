@@ -5,7 +5,7 @@
 
 	<default revision="master" remote="grey" />
 
-	<project name="control-ui" path="source/source-central-control" >
+	<project name="control-ui" path="source/control-ui" >
 		<linkfile src="python/glade.ui" dest="python/glade.ui" />
 		<linkfile src="python/control-ui.py" dest="python/control-ui.py" />
 	</project>
