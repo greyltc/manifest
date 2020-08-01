@@ -14,6 +14,10 @@
 		<linkfile src="central_control" dest="python/central_control" />
 	</project>
 
+	<project name="central-control" path="source/central-control-dev" revision="dev" >
+		<linkfile src="central_control" dest="python/central_control_dev" />
+	</project>
+
 	<project name="eqe" remote="james" path="source/eqe" >
 		<linkfile src="eqe" dest="python/eqe" />
 	</project>
