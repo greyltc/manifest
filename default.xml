@@ -22,6 +22,11 @@
 	<project name="eqe" remote="james" path="source/eqe" >
 		<linkfile src="eqe" dest="python/eqe" />
 	</project>
+	
+	<project name="plotter" remote="james" path="source/plotter" >
+		<linkfile src="plotter" dest="python/plotter" />
+	</project>
+	
 	<project name="acton_sp2150" remote="james" path="source/acton_sp2150" >
 		<linkfile src="sp2150" dest="python/sp2150" />
 		<linkfile src="virtual_sp2150" dest="python/virtual_sp2150" />
