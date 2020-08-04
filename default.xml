@@ -16,7 +16,7 @@
 	</project>
 
 	<project name="central-control" path="source/central-control-dev" revision="dev" >
-		<linkfile src="central_control" dest="python/central_control_dev" />
+		<linkfile src="central_control" dest="python/central_control-dev" />
 	</project>
 
 	<project name="eqe" remote="james" path="source/eqe" >
