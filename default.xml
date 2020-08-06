@@ -3,15 +3,15 @@
 	<remote  name="grey" fetch="../../../greyltc" />
 	<remote  name="james" fetch="../../../jmball" />
 
-	<default revision="master" remote="grey" />
+	<default revision="master" remote="grey" dest-branch="master" />
 
-	<project name="control-ui" path="source/control-ui" dest-branch="master">
+	<project name="control-ui" path="source/control-ui">
 		<linkfile src="python/ui.glade" dest="python/ui.glade" />
 		<linkfile src="python/control-ui.py" dest="python/control-ui.py" />
 		<linkfile src="python/example_config.yaml" dest="python/example_config.yaml" />
 	</project>
 
-	<project name="central-control" path="source/central-control" dest-branch="master">
+	<project name="central-control" path="source/central-control">
 		<linkfile src="central_control" dest="python/central_control" />
 	</project>
 
@@ -19,34 +19,34 @@
 		<linkfile src="central_control_dev" dest="python/central_control_dev" />
 	</project>
 
-	<project name="eqe" remote="james" path="source/eqe" dest-branch="master">
+	<project name="eqe" remote="james" path="source/eqe">
 		<linkfile src="eqe" dest="python/eqe" />
 	</project>
 	
-	<project name="plotter" remote="james" path="source/plotter" dest-branch="master">
+	<project name="plotter" remote="james" path="source/plotter">
 		<linkfile src="plotter" dest="python/plotter" />
 	</project>
 	
-	<project name="acton_sp2150" remote="james" path="source/acton_sp2150" dest-branch="master">
+	<project name="acton_sp2150" remote="james" path="source/acton_sp2150">
 		<linkfile src="sp2150" dest="python/sp2150" />
 		<linkfile src="virtual_sp2150" dest="python/virtual_sp2150" />
 	</project>
 
-	<project name="rigol_dp800" remote="james" path="source/rigol_dp800" dest-branch="master">
+	<project name="rigol_dp800" remote="james" path="source/rigol_dp800">
 		<linkfile src="dp800" dest="python/dp800" />
 		<linkfile src="virtual_dp800" dest="python/virtual_dp800" />
 	</project>
 
-	<project name="srs_sr830" remote="james" path="source/srs_sr830" dest-branch="master">
+	<project name="srs_sr830" remote="james" path="source/srs_sr830">
 		<linkfile src="sr830" dest="python/sr830" />
 		<linkfile src="virtual_sr830" dest="python/virtual_sr830" />
 	</project>
 
-	<project name="mqtt_tools" remote="james" path="source/mqtt_tools" dest-branch="master">
+	<project name="mqtt_tools" remote="james" path="source/mqtt_tools">
 		<linkfile src="mqtt_tools" dest="python/mqtt_tools" />
 	</project>
 
-	<project name="mqtt_saver" remote="james" path="source/mqtt_saver" dest-branch="master">
+	<project name="mqtt_saver" remote="james" path="source/mqtt_saver">
 		<linkfile src="saver" dest="python/saver" />
 	</project>
 </manifest>
