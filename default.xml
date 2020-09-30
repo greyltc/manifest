@@ -5,6 +5,9 @@
 
 	<default revision="master" remote="grey" />
 
+	<!--<project name="firmware" path=".firmware" >-->
+	<project name="firmware" path=".firmware" >
+
 	<project name="control-ui" path="source/control-ui" >
 		<linkfile src="python/ui.glade" dest="python/ui.glade" />
 		<linkfile src="python/control-ui.py" dest="python/control-ui.py" />
