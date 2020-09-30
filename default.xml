@@ -3,50 +3,52 @@
 	<remote  name="grey" fetch="../../../greyltc" />
 	<remote  name="james" fetch="../../../jmball" />
 
-	<default revision="master" remote="grey" />
+	<default revision="master" remote="grey" dest-branch="master" />
 
 	<!--<project name="firmware" path=".firmware" >-->
 
-	<project name="control-ui" path="source/control-ui" >
+	<project name="control-ui" path="source/control-ui">
 		<linkfile src="python/ui.glade" dest="python/ui.glade" />
 		<linkfile src="python/control-ui.py" dest="python/control-ui.py" />
+		<linkfile src="python/example_config.yaml" dest="python/example_config.yaml" />
 	</project>
 
-	<project name="central-control" path="source/central-control" >
-		<linkfile src="central_control/afms.py" dest="python/afms.py" />
-		<linkfile src="central_control/fabric.py" dest="python/fabric.py" />
-		<linkfile src="central_control/file_writer.py" dest="python/file_writer.py" />
-		<linkfile src="central_control/illumination.py" dest="python/illumination.py" />
-		<linkfile src="central_control/k2400.py" dest="python/k2400.py" />
-		<linkfile src="central_control/motion.py" dest="python/motion.py" />
-		<linkfile src="central_control/mppt.py" dest="python/mppt.py" />
-		<linkfile src="central_control/newport.py" dest="python/newport.py" />
-		<linkfile src="central_control/pcb.py" dest="python/pcb.py" />
-		<linkfile src="central_control/put_ftp.py" dest="python/put_ftp.py" />
-		<linkfile src="central_control/server.py" dest="python/server.py" />
-		<linkfile src="central_control/virt.py" dest="python/virt.py" />
-		<linkfile src="central_control/us.py" dest="python/us.py" />
+	<project name="central-control" path="source/central-control">
+		<linkfile src="central_control" dest="python/central_control" />
 	</project>
 
-	<project name="eqe" remote="james" path="source/eqe" >
-		<linkfile src="eqe/eqe.py" dest="python/eqe.py" />
+	<project name="central-control" path="source/central-control-dev" revision="dev" dest-branch="dev">
+		<linkfile src="central_control_dev" dest="python/central_control_dev" />
 	</project>
-	<project name="acton_sp2150" remote="james" path="source/acton_sp2150" >
-		<linkfile src="sp2150/sp2150.py" dest="python/sp2150.py" />
-		<linkfile src="virtual_sp2150/virtual_sp2150.py" dest="python/virtual_sp2150.py" />
+
+	<project name="eqe" remote="james" path="source/eqe">
+		<linkfile src="eqe" dest="python/eqe" />
 	</project>
-	<project name="rigol_dp800" remote="james" path="source/rigol_dp800" >
-		<linkfile src="dp800/dp800.py" dest="python/dp800.py" />
-		<linkfile src="virtual_dp800/virtual_dp800.py" dest="python/virtual_dp800.py" />
+	
+	<project name="plotter" remote="james" path="source/plotter">
+		<linkfile src="plotter" dest="python/plotter" />
 	</project>
-	<project name="srs_sr830" remote="james" path="source/srs_sr830" >
-		<linkfile src="sr830/sr830.py" dest="python/sr830.py" />
-		<linkfile src="virtual_sr830/virtual_sr830.py" dest="python/virtual_sr830.py" />
+	
+	<project name="acton_sp2150" remote="james" path="source/acton_sp2150">
+		<linkfile src="sp2150" dest="python/sp2150" />
+		<linkfile src="virtual_sp2150" dest="python/virtual_sp2150" />
 	</project>
-	<project name="mqtt_tools" remote="james" path="source/mqtt_tools" >
-		<linkfile src="mqtt_tools/queue_publisher.py" dest="python/queue_publisher.py" />
+
+	<project name="rigol_dp800" remote="james" path="source/rigol_dp800">
+		<linkfile src="dp800" dest="python/dp800" />
+		<linkfile src="virtual_dp800" dest="python/virtual_dp800" />
 	</project>
-	<project name="mqtt_saver" remote="james" path="source/mqtt_saver" >
-		<linkfile src="saver/saver.py" dest="python/saver.py" />
+
+	<project name="srs_sr830" remote="james" path="source/srs_sr830">
+		<linkfile src="sr830" dest="python/sr830" />
+		<linkfile src="virtual_sr830" dest="python/virtual_sr830" />
+	</project>
+
+	<project name="mqtt_tools" remote="james" path="source/mqtt_tools">
+		<linkfile src="mqtt_tools" dest="python/mqtt_tools" />
+	</project>
+
+	<project name="mqtt_saver" remote="james" path="source/mqtt_saver">
+		<linkfile src="saver" dest="python/saver" />
 	</project>
 </manifest>
