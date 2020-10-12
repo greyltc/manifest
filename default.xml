@@ -3,7 +3,7 @@
 	<remote  name="grey" fetch="../../../greyltc" />
 	<remote  name="james" fetch="../../../jmball" />
 
-	<default revision="master" remote="grey" dest-branch="master" />
+	<default revision="otter" remote="grey" />
 
 	<!--<project name="firmware" path=".firmware" >-->
 
