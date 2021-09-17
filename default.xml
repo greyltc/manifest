@@ -6,7 +6,7 @@
 
 	<default revision="otter" remote="grey" dest-branch="otter" />
 
-	<project name="firmware" path=".firmware">
+	<project name="firmware" path=".firmware" />
 
 	<project name="control-ui" remote="greylab" path="source/control-ui">
 		<linkfile src="python/ui.glade" dest="python/ui.glade" />
