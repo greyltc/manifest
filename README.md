@@ -1,2 +1,0 @@
-# manifest
-repo manifest repo
